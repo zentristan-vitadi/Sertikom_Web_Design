@@ -18,7 +18,27 @@ body{
 .LogoPurpleColor{
     color: var(--primary-colour);
 }
-
+.LogoLighterColor{
+    color: var(--tertiary-colour);
+}
+.veryLightColor{
+    color: var(--light-colour);
+}
+.specialHRcolor{
+    background-color: var(--tertiary-colour);
+    height: 3px;
+}
+.SideHRBar{
+    transform: rotate(90deg);
+    transform-origin: center;
+    width: 90px; 
+    height: 1px; 
+    opacity: 1;
+    color: var(--MainText-colour);
+}
+ul li{
+    list-style-type: none;
+}
 
 
 /* Navbar */
@@ -73,9 +93,6 @@ body{
 }
 /* Hero Ends */
 
-/* Perusahaan Yang Bermitra */
-
-/* Perusahaan Yang Bermitra Ends */
 
 /* Tentang Visi Digital */
 .TentangVisiText{
@@ -84,4 +101,30 @@ body{
 }
 .PembatasTentangKami{
     width: 30vh;
+}
+.TentangKamiNumber{
+    color: var(--secondary-colour);
+    font-size: 4.4vh;
+}
+.TentangKamiNumber1{
+    color: var(--primary-colour);
+    font-size: 4.4vh;
+}
+/* Tentang Visi Digital Ends */
+
+/* Visi & Misi */
+.VisiDanMisi{
+    background-image: linear-gradient(rgba(1,1,1,0.7)), url(../../assets/citySkylinesBG.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+/* Visi & Misi Ends */
+
+/* Layanan Kami */
+.LayananCardJudul{
+    color: var(--light-colour);
+
 }
