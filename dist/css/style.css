@@ -126,5 +126,37 @@ ul li{
 /* Layanan Kami */
 .LayananCardJudul{
     color: var(--light-colour);
-
+}
+.LearnMoreButton{
+    background-color: var(--primary-colour);
+    color: var(--light-colour);
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+}
+ .LayananKamiCards{
+    background:
+    linear-gradient(to top, #1E293B 0%, rgb(30, 41, 59) 1%, rgba(30, 41, 59, 0.6) 95%, transparent 100%),
+    url(../../assets/cardBackgroundImg/FirstCardBG.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    transition: background-size 0.4s ease;
+}
+ .LayananKamiCards:hover{
+    background-size: 110%;
+ }
+.HargaBervariasi{
+    font-size: 1.4vh;
+    opacity: 0.4;
+    color: var(--light-colour);
+}
+.LearnMoreButton{
+    transition: 0.4s;
+}
+.LearnMoreButton:hover{
+    transform: scale(1.05);
 }
