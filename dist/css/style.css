@@ -9,6 +9,7 @@ body{
     background-color: var(--light-colour);
     color: var(--MainText-colour);
 }
+
 .BottomSpacing{
     margin-bottom: 10%;
 }
@@ -40,7 +41,7 @@ ul li{
     list-style-type: none;
 }
 .OpacityHalf{
-    opacity: 0.5;
+    opacity: 0.25;
 }
 .italic-text{
     font-style: italic;
@@ -198,29 +199,53 @@ ul li{
     cursor: pointer;
 }
 
+/* Team Expert */
+.AngkaTeamExpert{
+    font-size: 5vh;
+    color: var(--primary-colour);
+}
+.TeamExpSideBar{
+    transform: rotate(90deg);
+    transform-origin: center;
+    width: 200px; 
+    height: 1px; 
+    opacity: 1;
+    color: var(--MainText-colour);
+}
+/* Team Expert Ends */
+
+/* footer */
+.PurpleGradientBG{
+    background: #8B5CF6;
+    background: linear-gradient(90deg, rgba(139, 92, 246, 1) 0%, rgba(91, 33, 182, 1) 100%);
+}
+.KembaliButton{
+    border-radius: 2px;
+    border: solid 1px var(--light-colour);
+    transition: 0.4s;
+}
+.SocialLogo{
+    transition: 0.4s;
+}
+.KembaliButton:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.SocialLogo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.KembaliButton a{
+    text-decoration: none;
+    color: var(--light-colour);
+}
+.FooterLink a{
+    color: var(--light-colour);
+    opacity: 0.5;
+    text-decoration: none;
+}
+.hrFooter{
+    color: var(--light-colour);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-/* 
-.swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
