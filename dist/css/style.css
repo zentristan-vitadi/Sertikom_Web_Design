@@ -134,7 +134,7 @@ ul li{
     border: none;
     text-align: center;
 }
- .LayananKamiCards{
+ /* .LayananKamiCards{
     background:
     linear-gradient(to top, #1E293B 0%, rgb(30, 41, 59) 1%, rgba(30, 41, 59, 0.6) 95%, transparent 100%),
     url(../../assets/cardBackgroundImg/FirstCardBG.png);
@@ -148,7 +148,18 @@ ul li{
 }
  .LayananKamiCards:hover{
     background-size: 110%;
- }
+ } */
+  .LayananCardsBG{
+    background:
+    linear-gradient(to top, #1E293B 0%, rgb(30, 41, 59) 1%, rgba(30, 41, 59, 0.6) 95%, transparent 100%),
+    url(../../assets/cardBackgroundImg/FirstCardBG.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 .HargaBervariasi{
     font-size: 1.4vh;
     opacity: 0.4;
