@@ -39,6 +39,15 @@ body{
 ul li{
     list-style-type: none;
 }
+.OpacityHalf{
+    opacity: 0.5;
+}
+.italic-text{
+    font-style: italic;
+}
+.RatingStarColor{
+    color: rgb(222, 178, 0);
+}
 
 
 /* Navbar */
@@ -170,4 +179,18 @@ ul li{
 }
 .LearnMoreButton:hover{
     transform: scale(1.05);
+}
+/* Layanan Kami Ends */
+
+/* Testimoni */
+.Testimoni{
+    background-image: url(../../assets/citySkylinesPurpleBG.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.DarkPurpleBG{
+    background-color: var(--primary-colour);
 }
