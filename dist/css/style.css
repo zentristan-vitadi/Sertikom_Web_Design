@@ -81,7 +81,7 @@ ul li{
     background-image: url(../../assets/HeroBGImage.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background-size: cover;
     background-position: center;
 }
@@ -268,7 +268,15 @@ ul li{
 }
 
 @media (max-width: 576px) {
-    
+    .NavbarLogo{
+        width: 35%;
+    }
+    .hero{
+        height: 120vh;
+    }
+    .HeroImage{
+        width: 70%;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
