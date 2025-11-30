@@ -286,4 +286,32 @@ ul li{
 @media (min-width: 992px) {
 
 }
+@media (min-width: 360px) and (max-width: 991px) {
+  .LayananKamiCards{
+    transform: perspective(800px) rotateX(0deg) rotateY(0deg) scale(1);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.35);
+  }
+
+  .LayananKamiCards .LayananCardsBG {
+    filter: brightness(0.6);
+  }
+
+  .LayananKamiCards .LayananContent{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .LayananKamiCards .LayananCardsBG{
+    filter: brightness(0.4);
+}
+.LayananKamiCards .LayananCardsBG1{
+    filter: brightness(0.4);
+}
+.LayananKamiCards .LayananCardsBG2{
+    filter: brightness(0.4);
+}
+.TeamExpertNumber{
+    flex-direction: row !important; 
+}
+}
+
 
