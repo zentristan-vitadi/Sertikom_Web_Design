@@ -137,49 +137,60 @@ ul li{
 .LayananCardJudul{
     color: var(--light-colour);
 }
-.LearnMoreButton{
-    background-color: var(--primary-colour);
-    color: var(--light-colour);
-    border-radius: 2px;
-    border: none;
-    text-align: center;
-}
- /* .LayananKamiCards{
-    background:
-    linear-gradient(to top, #1E293B 0%, rgb(30, 41, 59) 1%, rgba(30, 41, 59, 0.6) 95%, transparent 100%),
-    url(../../assets/cardBackgroundImg/FirstCardBG.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+.LayananKamiCards{
     position: relative;
-    transition: background-size 0.4s ease;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transform: perspective(800px) rotateX(5deg) rotateY(10deg) scale(0.95);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
- .LayananKamiCards:hover{
-    background-size: 110%;
- } */
-  .LayananCardsBG{
-    background:
-    linear-gradient(to top, #1E293B 0%, rgb(30, 41, 59) 1%, rgba(30, 41, 59, 0.6) 95%, transparent 100%),
-    url(../../assets/cardBackgroundImg/FirstCardBG.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-.HargaBervariasi{
-    font-size: 1.4vh;
-    opacity: 0.4;
-    color: var(--light-colour);
+.LayananCardsBG{
+    position: absolute;
+    inset: 0;
+    background: url(../../assets/cardBackgroundImg/FirstCardBG.png) center/cover no-repeat;
+    transition: filter 0.4s ease;
 }
-.LearnMoreButton{
-    transition: 0.4s;
+.LayananCardsBG1{
+    position: absolute;
+    inset: 0;
+    background: url(../../assets/cardBackgroundImg/SecondCardBG.png) center/cover no-repeat;
+    transition: filter 0.4s ease;
 }
-.LearnMoreButton:hover{
-    transform: scale(1.05);
+.LayananCardsBG2{
+    position: absolute;
+    inset: 0;
+    background: url(../../assets/cardBackgroundImg/ThirdCardBG.png) center/cover no-repeat;
+    transition: filter 0.4s ease;
+}
+.LayananContent{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    color: white;
+}
+.LayananKamiCards:hover{
+    transform: perspective(800px) rotateX(0deg) rotateY(0deg) scale(1);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.35);
+}
+.LayananKamiCards:hover .LayananCardsBG{
+    filter: brightness(0.4);
+}
+.LayananKamiCards:hover .LayananCardsBG1{
+    filter: brightness(0.4);
+}
+.LayananKamiCards:hover .LayananCardsBG2{
+    filter: brightness(0.4);
+}
+.LayananKamiCards:hover .LayananContent{
+    opacity: 1;
+    transform: translateY(0);
 }
 /* Layanan Kami Ends */
 
@@ -247,5 +258,24 @@ ul li{
 .hrFooter{
     color: var(--light-colour);
 }
+.LearnMoreButton{
+    border: solid 1px var(--light-colour);
+    border-radius: 2px;
+    transition: 0.4s;
+}
+.LearnMoreButton:hover{
+    transform: scale(1.05);
+}
 
+@media (max-width: 576px) {
+    
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
 
