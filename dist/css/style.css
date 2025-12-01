@@ -43,6 +43,9 @@ ul li{
 .OpacityHalf{
     opacity: 0.25;
 }
+.OpacityQuarter{
+    opacity: 0.7;
+}
 .italic-text{
     font-style: italic;
 }
@@ -60,6 +63,10 @@ ul li{
     padding: 1.4vh 2.1vh;
     transition: 0.3s;
     font-size: 1.7vh;
+}
+.HubungiKamiButton a{
+    text-decoration: none;
+    color: var(--light-colour);
 }
 .HubungiKamiButton:hover{
     transform: scale(1.02);
@@ -94,7 +101,7 @@ ul li{
     border-radius: 5px;
     color: var(--light-colour);
     border: 1px solid var(--light-colour);
-    padding: 1.5vh 2vh;
+    padding: 16px 24px;
     border: 1px solid var(--light-colour);
     transition: 0.4s;
 }
@@ -270,6 +277,30 @@ ul li{
     border-radius: 10px;
 }
 
+.Footer-section{
+    width: 40%;
+}
+.Footer-judul{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.Footer-menu{
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+.Footer-menu li{
+    margin: 6px 0;
+}
+.Footer-menu li a{
+    color: var(--light-colour);
+    opacity: 0.6;
+    text-decoration: none;
+}
+/* Footer Ends */
+
 /* Konsultasi Popup */
 .modal-overlay {
     position: fixed;
@@ -285,12 +316,10 @@ ul li{
     pointer-events: none;
     transition: 0.3s ease;
 }
-
 .modal-overlay.active {
     opacity: 1;
     pointer-events: all;
 }
-
 .modal-box {
     background: white;
     width: 90%;
@@ -300,12 +329,10 @@ ul li{
     position: relative;
     animation: popupScale 0.25s ease forwards;
 }
-
 @keyframes popupScale {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
-
 .close-modal {
     position: absolute;
     right: 15px;
@@ -316,21 +343,54 @@ ul li{
     cursor: pointer;
     color: #444;
 }
-.close-modal:hover { color: black; }
-
+.close-modal:hover { 
+    color: black; 
+}
 .error-text {
     color: red;
     font-size: 0.85rem;
     margin-top: 4px;
     display: block;
 }
-
 .expandable {
     overflow: auto;
     resize: vert;
 }
 
-@media (max-width: 576px) {
+/* Responsive untuk footer */
+@media (max-width: 768px){
+    .Footer-section{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Footer-menu{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .Footer-section.active .Footer-menu{
+        max-height: 500px;
+    }
+    .Footer-judul{
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--light-colour);
+        position: relative;
+    }
+    .Footer-judul::after{
+        content: "▼";
+        position: absolute;
+        right: 0;
+        transition: 0.3s;
+    }
+    .Footer-section.active .Footer-judul::after{
+        transform: rotate(180deg);
+    }
+}
+/* Responsive untuk footer Ends */
+
+@media (max-width: 576px){
     .NavbarLogo{
         width: 35%;
     }
@@ -341,13 +401,10 @@ ul li{
         width: 70%;
     }
 }
-
-@media (min-width: 577px) and (max-width: 991px) {
-
-}
-
-@media (min-width: 992px) {
-
+@media (min-width: 768px) and (max-width: 990px){
+    .HeroImage{
+        width: 80%;
+    }
 }
 @media (min-width: 360px) and (max-width: 991px) {
   .LayananKamiCards{

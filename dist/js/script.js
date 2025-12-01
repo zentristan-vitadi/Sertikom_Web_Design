@@ -81,3 +81,13 @@ form.addEventListener('submit', (e) => {
         // You can send data to WhatsApp / Email here
     }
 });
+
+const sections = document.querySelectorAll(".Footer-section");
+
+sections.forEach(section =>{
+    const  title = section.querySelector(".Footer-judul");
+
+    title.addEventListener("click", () =>{
+        section.classList.toggle("active");
+    });
+});
