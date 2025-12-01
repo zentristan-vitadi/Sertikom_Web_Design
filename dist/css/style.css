@@ -144,7 +144,7 @@ ul li{
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
-    transform: perspective(800px) rotateX(5deg) rotateY(10deg) scale(0.95);
+    transform: perspective(800px) rotateX(5deg) rotateY(-20deg) scale(0.95);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .LayananCardsBG{
@@ -266,8 +266,11 @@ ul li{
 .LearnMoreButton:hover{
     transform: scale(1.05);
 }
+.visiDigitalMaps{
+    border-radius: 10px;
+}
 
-/* Popup Overlay */
+/* Konsultasi Popup */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -283,13 +286,11 @@ ul li{
     transition: 0.3s ease;
 }
 
-/* When active */
 .modal-overlay.active {
     opacity: 1;
     pointer-events: all;
 }
 
-/* Popup Box */
 .modal-box {
     background: white;
     width: 90%;
@@ -305,7 +306,6 @@ ul li{
     to { transform: scale(1); opacity: 1; }
 }
 
-/* Close Button */
 .close-modal {
     position: absolute;
     right: 15px;
@@ -318,7 +318,6 @@ ul li{
 }
 .close-modal:hover { color: black; }
 
-/* Error text */
 .error-text {
     color: red;
     font-size: 0.85rem;
@@ -326,12 +325,10 @@ ul li{
     display: block;
 }
 
-/* Expandable Textarea */
 .expandable {
     overflow: auto;
     resize: vert;
 }
-
 
 @media (max-width: 576px) {
     .NavbarLogo{
@@ -358,7 +355,7 @@ ul li{
     box-shadow: 0 20px 35px rgba(0,0,0,0.35);
   }
 
-  .LayananKamiCards .LayananCardsBG {
+  .LayananKamiCards .LayananCardsBG { 
     filter: brightness(0.6);
   }
 

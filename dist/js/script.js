@@ -21,7 +21,6 @@ closeBtn.addEventListener('click', () => {
     modal.classList.remove('active');
 });
 
-// Click outside closes
 modal.addEventListener('click', (e) => {
     if (e.target === modal) modal.classList.remove('active');
 });
