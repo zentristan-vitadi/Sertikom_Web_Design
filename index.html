@@ -46,7 +46,7 @@
             </li>
           </ul>
           <div>
-            <button class="HubungiKamiButton fw-bold">
+            <button class="HubungiKamiButton fw-bold HeroKonsultasiButton">
               Hubungi Kami
             </button>
           </div>
@@ -409,8 +409,8 @@
                 <hr>
               </div>
             </div>
-            <div class="row row-cols-xl-5 row-cols-2 trig-fade-up enable-trig">
-              <div class="col trig-target flex flex-column align-items-center">
+            <div class="row row-cols-xl-5 row-cols-2 trig-fade-up enable-trig m-auto">
+              <div class="col trig-target d-flex flex-column align-items-center">
                 <img src="assets/img/FirstExpertTeam.png" alt="">
                 <p class="fw-bold fs-4">Indra Susanto</p>
                 <p>Chief Executive Order</p>
@@ -430,7 +430,7 @@
                 <p class="fw-bold fs-4">Yusuf Wangsaf</p>
                 <p>IT Solutions Architect</p> 
               </div>
-              <div class="col d-flex flex-column pt-4 TeamExpertNumber trig-fade-right enable-trig bg-primary">
+              <div class="col d-flex flex-column pt-4 TeamExpertNumber trig-fade-right enable-trig">
                 <div class="d-flex mb-5 align-items-center mx-2 trig-target">
                   <h1 class="AngkaTeamExpert fw-bold">42+</h1>
                   <p class="fw-medium">Lainya Yang Juga Sama Berkompetensi</p>
@@ -501,6 +501,47 @@
             </div>
           </div>
          </footer>
+
+         <!-- Consultation Form Popup -->
+<div id="consultationModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="close-modal">&times;</button>
+
+    <h2 class="mb-3 fw-bold LogoPurpleColor">Konsultasi Gratis</h2>
+    <p class="mb-4">Silahkan isi form berikut untuk memulai konsultasi.</p>
+
+    <form id="consultationForm">
+
+      <!-- Nama Lengkap -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold"><i class="fa-solid fa-user"></i>&nbsp;Nama Lengkap</label>
+        <input type="text" id="namaLengkap" class="form-control" placeholder="Nama Anda">
+        <small class="error-text"></small>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold"><i class="fa-solid fa-envelope"></i>&nbsp;Email</label>
+        <input type="email" id="email" class="form-control" placeholder="contoh@mail.com">
+        <small class="error-text"></small>
+      </div>
+
+      <!-- Pesan Singkat -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold"><i class="fa-solid fa-message"></i>&nbsp;Pesan Singkat</label>
+        <textarea id="pesan" class="form-control expandable" rows="2" placeholder="Tulis pesan Anda..."></textarea>
+        <small class="error-text"></small>
+      </div>
+
+      <button type="submit" class="PurpleGradientBG veryLightColor fw-bold p-2 w-100" style="border:none;border-radius:5px;">
+        Submit
+      </button>
+
+    </form>
+  </div>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="dist/js/script.js"></script>
 
