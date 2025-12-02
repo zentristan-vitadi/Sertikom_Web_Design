@@ -105,6 +105,7 @@ ul li{
     border: 1px solid var(--light-colour);
     transition: 0.4s;
     width: 40%;
+    font-size: 15px;
 }
 .HeroKonsultasiButton:hover{
     transform: scale(1.02);
@@ -282,7 +283,7 @@ ul li{
 }
 
 .Footer-section{
-    width: 50%;
+    width: 60%;
 }
 .Footer-judul{
     border: none;
@@ -302,6 +303,10 @@ ul li{
     color: var(--light-colour);
     opacity: 0.6;
     text-decoration: none;
+    transition: 0.4s;
+}
+..Footer-menu li a:hover{
+    transform: scale(1.1);
 }
 /* Footer Ends */
 
@@ -362,7 +367,7 @@ ul li{
 }
 
 /* Responsive untuk footer */
-@media (max-width: 768px){
+@media (max-width: 884px){
     .Footer-section{
         width: 100%;
         margin-bottom: 20px;
