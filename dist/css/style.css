@@ -305,7 +305,7 @@ ul li{
     text-decoration: none;
     transition: 0.4s;
 }
-..Footer-menu li a:hover{
+.Footer-menu li a:hover{
     transform: scale(1.1);
 }
 /* Footer Ends */
