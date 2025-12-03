@@ -412,6 +412,9 @@ ul li{
     .HeroImage{
         width: 70%;
     }
+    .TeamExpertText1{
+        margin-left: -5%;
+    }
 }
 @media (min-width: 768px) and (max-width: 990px){
     .HeroImage{
