@@ -8,8 +8,11 @@
 body{
     background-color: var(--light-colour);
     color: var(--MainText-colour);
+    overflow-x: hidden;
 }
-
+.Footer-menu li a.VisiDigitalMaps{
+    opacity: 1 !important;
+}
 .BottomSpacing{
     margin-bottom: 10%;
 }
@@ -56,11 +59,11 @@ ul li{
 
 /* Navbar */
 .HubungiKamiButton{
-    background-color: var(--secondary-colour);
+    background-color: var(--primary-colour);
     border-radius: 3px;
     color: var(--light-colour);
     border: 1px solid var(--light-colour);
-    padding: 1.4vh 2.1vh;
+    padding: 1.4vh 2vh;
     transition: 0.3s;
     font-size: 1.7vh;
 }
@@ -101,18 +104,18 @@ ul li{
     border-radius: 5px;
     color: var(--light-colour);
     border: 1px solid var(--light-colour);
-    padding: 16px 24px;
+    padding: 15px 20px;
     border: 1px solid var(--light-colour);
     transition: 0.4s;
-    width: 40%;
+    width: 45%;
     font-size: 15px;
 }
 .HeroKonsultasiButton:hover{
     transform: scale(1.02);
 }
-.HeroDeskripsiText{
+/* .HeroDeskripsiText{
     font-size: 20px;
-}
+} */
 /* Hero Ends */
 
 
@@ -417,6 +420,16 @@ ul li{
     .TeamExpertNumber{
         margin: auto;
     }
+    .TeamExpertText1{
+        margin-left: 5%;
+    }
+    .TeamExpertText1{
+        margin-right: 5%;
+    }
+    .TeamExpertNumber{
+        width: 80%;
+    }
+    
 }
 @media (min-width: 360px) and (max-width: 991px) {
   .LayananKamiCards{
@@ -443,5 +456,11 @@ ul li{
 }
 .TeamExpertNumber{
     flex-direction: row !important; 
+}
+.HeroTextBagian{
+    text-align: center;
+}
+.TentangKamiElement{
+    text-align: center;
 }
 }
