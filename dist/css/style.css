@@ -113,6 +113,9 @@ ul li{
 .HeroKonsultasiButton:hover{
     transform: scale(1.02);
 }
+.HeroImage{
+    width: 80%;
+}
 /* .HeroDeskripsiText{
     font-size: 20px;
 } */
@@ -410,7 +413,7 @@ ul li{
         height: 120vh;
     }
     .HeroImage{
-        width: 70%;
+        width: 80%;
     }
     .TeamExpertText1{
         margin-left: -5%;
